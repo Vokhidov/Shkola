@@ -1,6 +1,10 @@
 /* museo 300 16px top-header*/
 /* museo 300 17px header*/
 /* museo 500 21px logo*/
+@font-face {
+    font-family: museo;
+    src: url('/museosanscyrl/Museosanscyrl500.woff');
+  }
 body{
     box-sizing: border-box;
     line-height: 1.5;
@@ -8,6 +12,10 @@ body{
     margin: 0;
     color: white;
     background-color: #fdfdff;
+    font-family: museo, sans-serif;
+}
+.container{
+    max-width: 1410px;
 }
 a{
     text-decoration: none;
@@ -24,6 +32,9 @@ p, h4{
 li {
     list-style: none;
     line-height: 1.9;
+}
+h3{
+    font-weight: 800;
 }
 ul{
     padding: 5px 0;
@@ -50,6 +61,16 @@ header::before {
 .top-header{
     padding: 10px 0;
 }
+.nav{
+    display: none;
+}
+.navbar-top{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-btn i{
+    margin-top: 30px;
+}
 .line{
     width: 100%;
     height: 1px;
@@ -59,6 +80,7 @@ header::before {
 .navbar{
     padding: 0;
     color:white;
+    display: block;
 }
 .navbar-brand{
     font-size: 17px;
@@ -215,7 +237,6 @@ header::before {
       display: block;
       text-align: end;
       margin: 10px 0;
-      margin-right: auto;
       width: fit-content;
   }
   .all-news{
@@ -244,9 +265,9 @@ header::before {
     position: absolute;
     width: 30px;
     height: 2px;
-    left: 10%;
-    bottom: 20%;
+    left: 30px;
     background-color: rgb(223, 238, 255);
+    transform: translateY(40px);
  }
  .all-news__card::after{
     content: '';
@@ -255,9 +276,9 @@ header::before {
     height: 15px;
     border-radius: 50%;
     border: 1px solid  rgb(223, 238, 255);
-    left: 10%;
-    bottom: 20%;
+    left: 20px;
     background-color: #ffffff;
+    transform: translateY(-60px);
  }
   .card-info{
       display: flex;
@@ -296,6 +317,9 @@ header::before {
   }
 
   /*************** Advices **************/
+  .advices .row{
+      margin-top: 40px;
+  }
   .owl-carousel{
       display: block;
   }
@@ -331,12 +355,12 @@ header::before {
 .owl-next{
     position: absolute;
     top: 65%;
-    right: 0;
+    right: -10px;
 }
 .owl-prev{
     position: absolute;
     top: 65%;
-    left: -30px;
+    left: -50px;
 }
 .owl-carousel .owl-item img{
     width: auto;
@@ -344,14 +368,14 @@ header::before {
 }
 .carousel-icon{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    padding-top: 6px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
     background-color: white;
     border: 1px solid grey;
     border-radius: 50%;
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
     color: #075b9e;
 }
  .council-item__title{
@@ -407,7 +431,7 @@ header::before {
       margin-top: 30px;
   }
   .statistic-card{
-      width: 190px;
+      width: 250px;
       height: 150px;
       color: #075b9e;
       font-size: 25px;
@@ -481,11 +505,21 @@ header::before {
       color: #075b9e;
   }
   .footer-logo__info{
-      margin: 40px 0;
+      margin: 65px 0 0;
       padding: 30px 0;
   }
   .footer-contacts__details{
-    margin: 30px 0;
+    margin: 40px 0;
+  }
+  .footer-contacts i{
+      font-size: 20px;
+  }
+  .footer-contact__social{
+      margin: 40px 0 0;
+  }
+  .footer-contact__social i{
+    margin-right: 5px;
+    font-size: 25px;
   }
   .footer-line{
       width: 100%;

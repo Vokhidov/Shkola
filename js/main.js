@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel(
+    $("#advices-carousel").owlCarousel(
         {
             loop:true,
             margin:10,
@@ -24,9 +24,66 @@ $(document).ready(function(){
                 1000:{
                     items:4,
                     nav:true,
-                    loop:false
+                    loop:true,
                 }
             }
         }
     );
+    $("#partners-carousel").owlCarousel(
+        {
+            loop:true,
+            items: 5,
+            margin:10,
+            autoplay: true,
+            nav: false,
+            dots: true,
+            lazyLoad: true,
+            smartSpeed: 1000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true,
+                },
+                600:{
+                    items:5,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:false,
+                    loop:true,
+                }
+            }
+        }
+    );
+    $("#useful-carousel").owlCarousel(
+        {
+            loop:true,
+            items: 3,
+            margin:10,
+            nav:false,
+            autoplay: true,
+            autoplayTimeOut: 1000,
+            dots: true,
+            lazyLoad: true,
+            smartSpeed: 1000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false,
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false,
+                    loop:true,
+                }
+            }
+        }
+    )
   });

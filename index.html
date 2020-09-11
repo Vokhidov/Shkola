@@ -44,14 +44,20 @@
         </div>
         <div class="line"></div>
         <nav class="navbar">
-            <a class="navbar-brand" href="#">
+          <div class="navbar-top">
+            <div>
+              <a class="navbar-brand" href="#">
               <img src="img/logo.png" alt="logo">
               <div class="navbar-text">
                 <h4>Высшая школа судей</h4>
                 <p>При высшем судейском совете Республики Узбекистан</p>
               </div>
             </a>
-
+            </div>
+            <div class="navbar-hamburger">
+                <a href="#" class="nav-btn"><i class="fa fa-bars"></i></a>
+              </div>
+          </div>
             
             <div class="navbar-collapse" id="navbarNavAltMarkup">
               <div class="nav">
@@ -59,8 +65,8 @@
                 <a href="#" class="nav-link">Формы обучения</a>
                 <a href="#" class="nav-link">Международная деятельность</a>
                 <a href="#" class="nav-link">Научно-исследовательская деятельность</a>
-                <a href="#" class="nav-link"><i class="fa fa-bars"></i></a>
               </div>
+              
             </div>
           </nav>
         </div>
@@ -293,7 +299,7 @@
       <div class="container">
         <h3>Международные партнеры</h3>
         <!--carousel -->
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme" id="partners-carousel">
           <div class="item">
             <div class="carousel-card">
               <img src="img/osce.png" alt="osce" class="card__image">
@@ -356,22 +362,22 @@
       <div class="container">
         <h3>Статистика</h3>
         <div class="row">
-          <div class="col-auto">
+          <div class="col">
             <div class="statistic-card">
               <div class="statistic-card__number">
                 <span>60</span>
-                <img src="img/magistr.png" alt="magistr">
+                <img src="img/magistr1.png" alt="magistr">
               </div>
               <div class="statistic-card__text">
                 Магистратура
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col">
             <div class="statistic-card">
               <div class="statistic-card__number">
                 <span>293</span>
-                <img src="img/magistr.png" alt="magistr">
+                <img src="img/diplom1.png" alt="magistr">
               </div>
               <div class="statistic-card__text">
                 Повышение 
@@ -379,33 +385,33 @@
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col">
             <div class="statistic-card">
               <div class="statistic-card__number">
                 <span>208</span>
-                <img src="img/magistr.png" alt="magistr">
+                <img src="img/sudya1.png" alt="magistr">
               </div>
               <div class="statistic-card__text">
                 Судьи
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col">
             <div class="statistic-card">
               <div class="statistic-card__number">
                 <span>85</span>
-                <img src="img/magistr.png" alt="magistr">
+                <img src="img/helpers.png" alt="magistr">
               </div>
               <div class="statistic-card__text">
                 Помощники судей
               </div>
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col">
             <div class="statistic-card">
               <div class="statistic-card__number">
                 <span>15</span>
-                <img src="img/magistr.png" alt="magistr">
+                <img src="img/prepare1.png" alt="magistr">
               </div>
               <div class="statistic-card__text">
                 Переподготовка судей
@@ -421,40 +427,40 @@
         <h3>Полезные ссылки</h3>
         <div class="row">
           <div class="owl-carousel owl-theme" id="useful-carousel">
-            <div class="item">
-              <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
-                  <div class="usefulls-item__image">
-                    <img src="img/gerb.png" alt="">
-                  </div>
-                  <div class="usefulls-item__title">
-                      <span>Официальный веб-сайт 
-                        Президента Республики 
-                        Узбекистан</span>
-                  </div>
-              </a>
-          </div>
-            <div class="item">
-              <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
-                  <div class="usefulls-item__image">
-                      <img src="img/epi.png" alt="">
-                  </div>
-                  <div class="usefulls-item__title">
-                      <span>Единый портал интерактивных
-                        государственных услуг</span>
-                  </div>
-              </a>
-          </div>
-          <div class="item">
-            <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
-                <div class="usefulls-item__image">
-                    <img src="img/portal.png" alt="">
-                </div>
-                <div class="usefulls-item__title">
-                    <span>Портал открытых данных 
-                      Республики Узбекистан</span>
-                </div>
-            </a>
-        </div>
+        <div class="item">
+          <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
+              <div class="usefulls-item__image">
+                <img src="img/gerb.png" alt="">
+              </div>
+              <div class="usefulls-item__title">
+                  <span>Официальный веб-сайт 
+                    Президента Республики 
+                    Узбекистан</span>
+              </div>
+          </a>
+      </div>
+        <div class="item">
+          <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
+              <div class="usefulls-item__image">
+                  <img src="img/epi.png" alt="">
+              </div>
+              <div class="usefulls-item__title">
+                  <span>Единый портал интерактивных
+                    государственных услуг</span>
+              </div>
+          </a>
+      </div>
+      <div class="item">
+        <a href="http://my.gov.uz/ru" target="_blank" class="usefulls-item">
+            <div class="usefulls-item__image">
+                <img src="img/portal.png" alt="">
+            </div>
+            <div class="usefulls-item__title">
+                <span>Портал открытых данных 
+                  Республики Узбекистан</span>
+            </div>
+        </a>
+    </div>
           </div>
         </div>
       </div>
